@@ -1,0 +1,4 @@
+<h1> Все кандидаты </h1 >
+{% for item in list %}
+    <p><a href="/candidates/{{ item['pk'] }}">{{ item['name'] }}</a></p>
+{% endfor %}

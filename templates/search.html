@@ -1,0 +1,6 @@
+<h1>найдено кандидатов {{number}}</h1>
+
+    {% for item in search_result %}
+        <p><a href="/candidates/{{item['pk']}}">{{item['name']}}</a></p>
+{% endfor %}
+
